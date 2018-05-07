@@ -10,8 +10,7 @@ class Filter {
 public:
     Filter();
 
-    // Pure virtual functions.
-    virtual void init() = 0;
+    // Pure virtual function.
     virtual double doFilter(double data) = 0;
 };
 #endif //ARDUINO_EASY_FILTER_LIBRARY_FILTER_H
