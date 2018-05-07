@@ -1,3 +1,6 @@
 #######################################
 # Syntax Coloring Map For Easy Filter Library
 #######################################
+
+MedianFilter	KEYWORD1
+doFilter	KEYWORD2

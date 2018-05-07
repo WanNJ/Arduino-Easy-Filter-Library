@@ -5,7 +5,7 @@
 #ifndef ARDUINO_EASY_FILTER_LIBRARY_EASYFILTER_H
 #define ARDUINO_EASY_FILTER_LIBRARY_EASYFILTER_H
 
-#include "Arduino.h"
 #include "Filter.h"
+#include "MedianFilter/MedianFilter.h"
 
 #endif //ARDUINO_EASY_FILTER_LIBRARY_EASYFILTER_H
