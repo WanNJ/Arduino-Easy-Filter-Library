@@ -1,5 +1,6 @@
 /**
  * Created by Jack Wan on 5/7/18.
+ * Reference from http://forum.codecall.net/topic/49338-templates-and-sorting/.
  */
 
 #ifndef ARDUINO_EASY_FILTER_LIBRARY_SORT_H
