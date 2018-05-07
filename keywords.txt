@@ -2,6 +2,7 @@
 # Syntax Coloring Map For Easy Filter Library
 #######################################
 
+EasyFilter	KEYWORD1
 MedianFilter	KEYWORD1
 AverageFilter	KEYWORD1
 SimpleLowPassFilter	KEYWORD1
