@@ -3,4 +3,6 @@
 #######################################
 
 MedianFilter	KEYWORD1
+AverageFilter	KEYWORD1
+SimpleLowPassFilter	KEYWORD1
 doFilter	KEYWORD2
