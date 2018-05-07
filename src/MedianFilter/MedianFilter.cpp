@@ -32,7 +32,7 @@ double MedianFilter::doFilter(double data) {
     if(_currentSize == _bufSize) {
         _currentSize = 0;
         selectSort(_data, _bufSize);
-        return _data[(_bufSize - 1) / 2];
+        return (_data[(_bufSize - 1) / 2] + _data[(_bufSize + 1) / 2])/2;
     }
 
     return -1;
