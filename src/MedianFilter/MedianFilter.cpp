@@ -7,17 +7,17 @@
 MedianFilter::MedianFilter(int n) {
     _currentSize = 0;
     _bufSize = n;
-    _data = new double[n];
+    _buf = new double[n];
 }
 
 MedianFilter::MedianFilter() {
     _currentSize = 0;
     _bufSize = 3;
-    _data = new double[3];
+    _buf = new double[3];
 }
 
 MedianFilter::~MedianFilter() {
-    delete _data;
+    delete _buf;
 }
 
 /**
@@ -27,12 +27,12 @@ MedianFilter::~MedianFilter() {
  */
 double MedianFilter::doFilter(double data) {
     if(_currentSize < _bufSize)
-        _data[_currentSize++] = data;
+        _buf[_currentSize++] = data;
 
     if(_currentSize == _bufSize) {
         _currentSize = 0;
-        selectSort(_data, _bufSize);
-        return (_data[(_bufSize - 1) / 2] + _data[(_bufSize + 1) / 2])/2;
+        selectSort(_buf, _bufSize);
+        return (_buf[(_bufSize - 1) / 2] + _buf[(_bufSize + 1) / 2])/2;
     }
 
     return -1;

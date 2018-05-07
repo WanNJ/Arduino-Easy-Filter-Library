@@ -5,14 +5,14 @@
 #ifndef ARDUINO_EASY_FILTER_LIBRARY_MEDIANFILTER_H
 #define ARDUINO_EASY_FILTER_LIBRARY_MEDIANFILTER_H
 
-#include "../EasyFilter.h"
+#include "../Filter.h"
 #include "../utils/sort.h"
 
 class MedianFilter : public Filter {
 private:
     int _currentSize;
     int _bufSize;
-    double* _data;
+    double* _buf;
 
 public:
     // Default n equals 3.
